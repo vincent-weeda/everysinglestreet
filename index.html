@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+<style>
+.search-layer {
+  top: 65px;
+  left: .5em;
+}
+.ol-touch .search-layer {
+  top: 80px;
+}
+</style>
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control button {
+            background-color: #f8f8f8 !important;
+            color: #000000 !important;
+            border-radius: 0px !important;
+        }
+        .ol-zoom, .geolocate, .gcd-gl-control .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 3px !important;
+        }
+        .ol-scale-line {
+            background: none !important;
+        }
+        .ol-scale-line-inner {
+            border: 2px solid #f8f8f8 !important;
+            border-top: none !important;
+            background: rgba(255, 255, 255, 0.5) !important;
+            color: black !important;
+        }
+        </style>
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+        <script src="resources/polyfills.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="layers/motorway_link_0.js"></script><script src="layers/motorway_1.js"></script><script src="layers/trunk_link_2.js"></script><script src="layers/trunk_3.js"></script><script src="layers/primary_link_4.js"></script><script src="layers/primary_5.js"></script><script src="layers/secondary_6.js"></script><script src="layers/tertiary_7.js"></script><script src="layers/unclassified_8.js"></script><script src="layers/residential_9.js"></script><script src="layers/living_street_10.js"></script><script src="layers/pedestrian_11.js"></script><script src="layers/cycleway_12.js"></script><script src="layers/footway_13.js"></script><script src="layers/alatikkurilaTracks_14.js"></script><script src="layers/alppilaTracks_15.js"></script><script src="layers/brahenkenttTracks_16.js"></script><script src="layers/eiraTracks_17.js"></script><script src="layers/hakaniemiTracks_18.js"></script><script src="layers/harjupuuvallilaTracks_19.js"></script><script src="layers/jtksaariTracks_20.js"></script><script src="layers/kaivopuistoTracks_21.js"></script><script src="layers/kallioTracks_22.js"></script><script src="layers/kruununhakaTracks_23.js"></script><script src="layers/kuusilehtikoivusaaretTracks_24.js"></script><script src="layers/landboTracks_25.js"></script><script src="layers/lauttasaarisouthTracks_26.js"></script><script src="layers/stersundomTracks_27.js"></script><script src="layers/punavuoriTracks_28.js"></script><script src="layers/puroniittyTracks_29.js"></script><script src="layers/ruoholahtiTracks_30.js"></script><script src="layers/talosaariTracks_31.js"></script><script src="layers/itpasilaTracks_32.js"></script><script src="layers/karhusaariTracks_33.js"></script><script src="layers/katajanokkaTracks_34.js"></script><script src="layers/lauttasaarinorthTracks_35.js"></script><script src="layers/maununnevaTracks_36.js"></script><script src="layers/vallilaTracks_37.js"></script>
+        <script src="styles/motorway_link_0_style.js"></script><script src="styles/motorway_1_style.js"></script><script src="styles/trunk_link_2_style.js"></script><script src="styles/trunk_3_style.js"></script><script src="styles/primary_link_4_style.js"></script><script src="styles/primary_5_style.js"></script><script src="styles/secondary_6_style.js"></script><script src="styles/tertiary_7_style.js"></script><script src="styles/unclassified_8_style.js"></script><script src="styles/residential_9_style.js"></script><script src="styles/living_street_10_style.js"></script><script src="styles/pedestrian_11_style.js"></script><script src="styles/cycleway_12_style.js"></script><script src="styles/footway_13_style.js"></script><script src="styles/alatikkurilaTracks_14_style.js"></script><script src="styles/alppilaTracks_15_style.js"></script><script src="styles/brahenkenttTracks_16_style.js"></script><script src="styles/eiraTracks_17_style.js"></script><script src="styles/hakaniemiTracks_18_style.js"></script><script src="styles/harjupuuvallilaTracks_19_style.js"></script><script src="styles/jtksaariTracks_20_style.js"></script><script src="styles/kaivopuistoTracks_21_style.js"></script><script src="styles/kallioTracks_22_style.js"></script><script src="styles/kruununhakaTracks_23_style.js"></script><script src="styles/kuusilehtikoivusaaretTracks_24_style.js"></script><script src="styles/landboTracks_25_style.js"></script><script src="styles/lauttasaarisouthTracks_26_style.js"></script><script src="styles/stersundomTracks_27_style.js"></script><script src="styles/punavuoriTracks_28_style.js"></script><script src="styles/puroniittyTracks_29_style.js"></script><script src="styles/ruoholahtiTracks_30_style.js"></script><script src="styles/talosaariTracks_31_style.js"></script><script src="styles/itpasilaTracks_32_style.js"></script><script src="styles/karhusaariTracks_33_style.js"></script><script src="styles/katajanokkaTracks_34_style.js"></script><script src="styles/lauttasaarinorthTracks_35_style.js"></script><script src="styles/maununnevaTracks_36_style.js"></script><script src="styles/vallilaTracks_37_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>
+    </body>
+</html>
