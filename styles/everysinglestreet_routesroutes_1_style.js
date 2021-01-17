@@ -1,9 +1,9 @@
 var size = 0;
 var placement = 'point';
-function categories_everysinglestreet_routes_4326_1(feature, value, size, resolution, labelText,
+function categories_everysinglestreet_routesroutes_1(feature, value, size, resolution, labelText,
                        labelFont, labelFill, bufferColor, bufferWidth,
                        placement) {
-                switch(value.toString()) {case 'false':
+                switch(value.toString()) {case 'False':
                     return [ new ol.style.Style({
         stroke: new ol.style.Stroke({color: 'rgba(227,125,178,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 0}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
@@ -11,7 +11,7 @@ function categories_everysinglestreet_routes_4326_1(feature, value, size, resolu
                               bufferWidth)
     })];
                     break;
-case 'true':
+case 'True':
                     return [ new ol.style.Style({
         stroke: new ol.style.Stroke({color: 'rgba(166,206,124,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 0}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
@@ -28,7 +28,7 @@ default:
     })];
                     break;}};
 
-var style_everysinglestreet_routes_4326_1 = function(feature, resolution){
+var style_everysinglestreet_routesroutes_1 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -48,7 +48,7 @@ var style_everysinglestreet_routes_4326_1 = function(feature, resolution){
         labelText = String("");
     }
     
-var style = categories_everysinglestreet_routes_4326_1(feature, value, size, resolution, labelText,
+var style = categories_everysinglestreet_routesroutes_1(feature, value, size, resolution, labelText,
                           labelFont, labelFill, bufferColor,
                           bufferWidth, placement);
 
