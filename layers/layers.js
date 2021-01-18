@@ -1,5 +1,5 @@
 ol.proj.proj4.register(proj4);
-ol.proj.get("EPSG:3067").setExtent([378918.401724, 6668410.150632, 389018.875947, 6677731.298925]);
+ol.proj.get("EPSG:3067").setExtent([379045.998719, 6666007.658895, 403556.998744, 6688627.454858]);
 var wms_layers = [];
 
 
@@ -52,7 +52,7 @@ lyr_everysinglestreet_routes_4326_1.set('fieldAliases', {'fid': 'fid', 'Name': '
 lyr_missedstreetsTracks_2.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', });
 lyr_everysinglestreet_routes_4326_1.set('fieldImages', {'fid': 'TextEdit', 'Name': 'TextEdit', 'Length': 'TextEdit', 'Done': 'CheckBox', });
 lyr_missedstreetsTracks_2.set('fieldImages', {'Name': '', 'description': '', 'timestamp': '', 'begin': '', 'end': '', 'altitudeMode': '', 'tessellate': '', 'extrude': '', 'visibility': '', 'drawOrder': '', 'icon': '', });
-lyr_everysinglestreet_routes_4326_1.set('fieldLabels', {'fid': 'no label', 'Name': 'header label', 'Length': 'header label', 'Done': 'no label', });
+lyr_everysinglestreet_routes_4326_1.set('fieldLabels', {'fid': 'no label', 'Name': 'header label', 'Length': 'header label', 'Done': 'header label', });
 lyr_missedstreetsTracks_2.set('fieldLabels', {'Name': 'no label', 'description': 'no label', 'timestamp': 'no label', 'begin': 'no label', 'end': 'no label', 'altitudeMode': 'no label', 'tessellate': 'no label', 'extrude': 'no label', 'visibility': 'no label', 'drawOrder': 'no label', 'icon': 'no label', });
 lyr_missedstreetsTracks_2.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
