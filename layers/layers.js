@@ -1,5 +1,5 @@
 ol.proj.proj4.register(proj4);
-ol.proj.get("EPSG:3067").setExtent([379549.040470, 6668061.504821, 399749.988916, 6686703.801407]);
+ol.proj.get("EPSG:3067").setExtent([378918.401724, 6668410.150632, 389018.875947, 6677731.298925]);
 var wms_layers = [];
 
 
@@ -48,11 +48,11 @@ var lyr_missedstreetsTracks_2 = new ol.layer.Vector({
 
 lyr_CartoPositron_0.setVisible(true);lyr_everysinglestreet_routes_4326_1.setVisible(true);lyr_missedstreetsTracks_2.setVisible(true);
 var layersList = [lyr_CartoPositron_0,lyr_everysinglestreet_routes_4326_1,lyr_missedstreetsTracks_2];
-lyr_everysinglestreet_routes_4326_1.set('fieldAliases', {'fid': 'fid', 'Name': 'Name', 'layer': 'layer', 'Length': 'Length', 'Done': 'Done', });
+lyr_everysinglestreet_routes_4326_1.set('fieldAliases', {'fid': 'fid', 'Name': 'Name', 'Length': 'Length', 'Done': 'Done', });
 lyr_missedstreetsTracks_2.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', });
-lyr_everysinglestreet_routes_4326_1.set('fieldImages', {'fid': 'TextEdit', 'Name': 'TextEdit', 'layer': 'TextEdit', 'Length': 'TextEdit', 'Done': 'CheckBox', });
+lyr_everysinglestreet_routes_4326_1.set('fieldImages', {'fid': 'TextEdit', 'Name': 'TextEdit', 'Length': 'TextEdit', 'Done': 'CheckBox', });
 lyr_missedstreetsTracks_2.set('fieldImages', {'Name': '', 'description': '', 'timestamp': '', 'begin': '', 'end': '', 'altitudeMode': '', 'tessellate': '', 'extrude': '', 'visibility': '', 'drawOrder': '', 'icon': '', });
-lyr_everysinglestreet_routes_4326_1.set('fieldLabels', {'fid': 'no label', 'Name': 'header label', 'layer': 'no label', 'Length': 'inline label', 'Done': 'no label', });
+lyr_everysinglestreet_routes_4326_1.set('fieldLabels', {'fid': 'no label', 'Name': 'header label', 'Length': 'header label', 'Done': 'no label', });
 lyr_missedstreetsTracks_2.set('fieldLabels', {'Name': 'no label', 'description': 'no label', 'timestamp': 'no label', 'begin': 'no label', 'end': 'no label', 'altitudeMode': 'no label', 'tessellate': 'no label', 'extrude': 'no label', 'visibility': 'no label', 'drawOrder': 'no label', 'icon': 'no label', });
 lyr_missedstreetsTracks_2.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';

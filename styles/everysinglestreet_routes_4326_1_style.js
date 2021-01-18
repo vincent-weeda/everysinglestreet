@@ -5,7 +5,7 @@ function categories_everysinglestreet_routes_4326_1(feature, value, size, resolu
                        placement) {
                 switch(value.toString()) {case 'false':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(72,123,182,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 2}),
+        stroke: new ol.style.Stroke({color: 'rgba(72,123,182,1.0)', lineDash: null, lineCap: 'round', lineJoin: 'round', width: 2}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
