@@ -1,5 +1,5 @@
 ol.proj.proj4.register(proj4);
-ol.proj.get("EPSG:3067").setExtent([379045.998719, 6666007.658895, 403556.998744, 6688627.454858]);
+ol.proj.get("EPSG:3067").setExtent([386030.508684, 6671250.389287, 388157.536068, 6672862.956336]);
 var wms_layers = [];
 
 
@@ -14,46 +14,62 @@ var wms_layers = [];
                 url: 'https://cartodb-basemaps-a.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png'
             })
         });
-var format_everysinglestreet_routes_4326_1 = new ol.format.GeoJSON();
-var features_everysinglestreet_routes_4326_1 = format_everysinglestreet_routes_4326_1.readFeatures(json_everysinglestreet_routes_4326_1, 
+var format_everysinglestreet_routes_1 = new ol.format.GeoJSON();
+var features_everysinglestreet_routes_1 = format_everysinglestreet_routes_1.readFeatures(json_everysinglestreet_routes_1, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3067'});
-var jsonSource_everysinglestreet_routes_4326_1 = new ol.source.Vector({
+var jsonSource_everysinglestreet_routes_1 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_everysinglestreet_routes_4326_1.addFeatures(features_everysinglestreet_routes_4326_1);
-var lyr_everysinglestreet_routes_4326_1 = new ol.layer.Vector({
+jsonSource_everysinglestreet_routes_1.addFeatures(features_everysinglestreet_routes_1);
+var lyr_everysinglestreet_routes_1 = new ol.layer.Vector({
                 declutter: true,
-                source:jsonSource_everysinglestreet_routes_4326_1, 
-                style: style_everysinglestreet_routes_4326_1,
+                source:jsonSource_everysinglestreet_routes_1, 
+                style: style_everysinglestreet_routes_1,
                 interactive: true,
-    title: 'everysinglestreet_routes_4326<br />\
-    <img src="styles/legend/everysinglestreet_routes_4326_1_0.png" /> false<br />\
-    <img src="styles/legend/everysinglestreet_routes_4326_1_1.png" /> true<br />\
-    <img src="styles/legend/everysinglestreet_routes_4326_1_2.png" /> <br />'
+    title: 'everysinglestreet_routes<br />\
+    <img src="styles/legend/everysinglestreet_routes_1_0.png" /> false<br />\
+    <img src="styles/legend/everysinglestreet_routes_1_1.png" /> true<br />'
         });
-var format_missedstreetsTracks_2 = new ol.format.GeoJSON();
-var features_missedstreetsTracks_2 = format_missedstreetsTracks_2.readFeatures(json_missedstreetsTracks_2, 
+var format_Munkkivuoritracks_2 = new ol.format.GeoJSON();
+var features_Munkkivuoritracks_2 = format_Munkkivuoritracks_2.readFeatures(json_Munkkivuoritracks_2, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3067'});
-var jsonSource_missedstreetsTracks_2 = new ol.source.Vector({
+var jsonSource_Munkkivuoritracks_2 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_missedstreetsTracks_2.addFeatures(features_missedstreetsTracks_2);
-var lyr_missedstreetsTracks_2 = new ol.layer.Vector({
+jsonSource_Munkkivuoritracks_2.addFeatures(features_Munkkivuoritracks_2);
+var lyr_Munkkivuoritracks_2 = new ol.layer.Vector({
                 declutter: true,
-                source:jsonSource_missedstreetsTracks_2, 
-                style: style_missedstreetsTracks_2,
+                source:jsonSource_Munkkivuoritracks_2, 
+                style: style_Munkkivuoritracks_2,
                 interactive: true,
-                title: '<img src="styles/legend/missedstreetsTracks_2.png" /> missed streets Tracks'
+                title: '<img src="styles/legend/Munkkivuoritracks_2.png" /> Munkkivuori tracks'
+            });
+var format_missedstreetsTracks_3 = new ol.format.GeoJSON();
+var features_missedstreetsTracks_3 = format_missedstreetsTracks_3.readFeatures(json_missedstreetsTracks_3, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3067'});
+var jsonSource_missedstreetsTracks_3 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_missedstreetsTracks_3.addFeatures(features_missedstreetsTracks_3);
+var lyr_missedstreetsTracks_3 = new ol.layer.Vector({
+                declutter: true,
+                source:jsonSource_missedstreetsTracks_3, 
+                style: style_missedstreetsTracks_3,
+                interactive: true,
+                title: '<img src="styles/legend/missedstreetsTracks_3.png" /> missed streets Tracks'
             });
 
-lyr_CartoPositron_0.setVisible(true);lyr_everysinglestreet_routes_4326_1.setVisible(true);lyr_missedstreetsTracks_2.setVisible(true);
-var layersList = [lyr_CartoPositron_0,lyr_everysinglestreet_routes_4326_1,lyr_missedstreetsTracks_2];
-lyr_everysinglestreet_routes_4326_1.set('fieldAliases', {'fid': 'fid', 'Name': 'Name', 'Length': 'Length', 'Done': 'Done', });
-lyr_missedstreetsTracks_2.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', });
-lyr_everysinglestreet_routes_4326_1.set('fieldImages', {'fid': 'TextEdit', 'Name': 'TextEdit', 'Length': 'TextEdit', 'Done': 'CheckBox', });
-lyr_missedstreetsTracks_2.set('fieldImages', {'Name': '', 'description': '', 'timestamp': '', 'begin': '', 'end': '', 'altitudeMode': '', 'tessellate': '', 'extrude': '', 'visibility': '', 'drawOrder': '', 'icon': '', });
-lyr_everysinglestreet_routes_4326_1.set('fieldLabels', {'fid': 'no label', 'Name': 'header label', 'Length': 'header label', 'Done': 'header label', });
-lyr_missedstreetsTracks_2.set('fieldLabels', {'Name': 'no label', 'description': 'no label', 'timestamp': 'no label', 'begin': 'no label', 'end': 'no label', 'altitudeMode': 'no label', 'tessellate': 'no label', 'extrude': 'no label', 'visibility': 'no label', 'drawOrder': 'no label', 'icon': 'no label', });
-lyr_missedstreetsTracks_2.on('precompose', function(evt) {
+lyr_CartoPositron_0.setVisible(true);lyr_everysinglestreet_routes_1.setVisible(true);lyr_Munkkivuoritracks_2.setVisible(true);lyr_missedstreetsTracks_3.setVisible(true);
+var layersList = [lyr_CartoPositron_0,lyr_everysinglestreet_routes_1,lyr_Munkkivuoritracks_2,lyr_missedstreetsTracks_3];
+lyr_everysinglestreet_routes_1.set('fieldAliases', {'fid': 'fid', 'Name': 'Name', 'Length': 'Length', 'Done': 'Done', });
+lyr_Munkkivuoritracks_2.set('fieldAliases', {'name': 'name', 'cmt': 'cmt', 'desc': 'desc', 'src': 'src', 'link1_href': 'link1_href', 'link1_text': 'link1_text', 'link1_type': 'link1_type', 'link2_href': 'link2_href', 'link2_text': 'link2_text', 'link2_type': 'link2_type', 'number': 'number', 'type': 'type', });
+lyr_missedstreetsTracks_3.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', });
+lyr_everysinglestreet_routes_1.set('fieldImages', {'fid': 'TextEdit', 'Name': 'TextEdit', 'Length': 'TextEdit', 'Done': 'CheckBox', });
+lyr_Munkkivuoritracks_2.set('fieldImages', {'name': '', 'cmt': '', 'desc': '', 'src': '', 'link1_href': '', 'link1_text': '', 'link1_type': '', 'link2_href': '', 'link2_text': '', 'link2_type': '', 'number': '', 'type': '', });
+lyr_missedstreetsTracks_3.set('fieldImages', {'Name': '', 'description': '', 'timestamp': '', 'begin': '', 'end': '', 'altitudeMode': '', 'tessellate': '', 'extrude': '', 'visibility': '', 'drawOrder': '', 'icon': '', });
+lyr_everysinglestreet_routes_1.set('fieldLabels', {'fid': 'no label', 'Name': 'header label', 'Length': 'header label', 'Done': 'header label', });
+lyr_Munkkivuoritracks_2.set('fieldLabels', {'name': 'header label', 'cmt': 'no label', 'desc': 'no label', 'src': 'no label', 'link1_href': 'no label', 'link1_text': 'no label', 'link1_type': 'no label', 'link2_href': 'no label', 'link2_text': 'no label', 'link2_type': 'no label', 'number': 'no label', 'type': 'no label', });
+lyr_missedstreetsTracks_3.set('fieldLabels', {'Name': 'no label', 'description': 'no label', 'timestamp': 'no label', 'begin': 'no label', 'end': 'no label', 'altitudeMode': 'no label', 'tessellate': 'no label', 'extrude': 'no label', 'visibility': 'no label', 'drawOrder': 'no label', 'icon': 'no label', });
+lyr_missedstreetsTracks_3.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
