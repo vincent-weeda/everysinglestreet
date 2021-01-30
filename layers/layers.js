@@ -1,5 +1,5 @@
 ol.proj.proj4.register(proj4);
-ol.proj.get("EPSG:3067").setExtent([375856.843607, 6664829.804992, 408771.010307, 6690959.916373]);
+ol.proj.get("EPSG:3067").setExtent([376609.416626, 6666432.940982, 405767.765260, 6689581.359242]);
 var wms_layers = [];
 
 
@@ -51,7 +51,7 @@ lyr_everysinglestreet_routes_1.set('fieldAliases', {'fid': 'fid', 'Name': 'Name'
 lyr_missedstreetsTracks_2.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', });
 lyr_everysinglestreet_routes_1.set('fieldImages', {'fid': '', 'Name': '', 'Length': '', 'Done': '', });
 lyr_missedstreetsTracks_2.set('fieldImages', {'Name': '', 'description': '', 'timestamp': '', 'begin': '', 'end': '', 'altitudeMode': '', 'tessellate': '', 'extrude': '', 'visibility': '', 'drawOrder': '', 'icon': '', });
-lyr_everysinglestreet_routes_1.set('fieldLabels', {'fid': 'inline label', 'Name': 'header label', 'Length': 'header label', 'Done': 'header label', });
+lyr_everysinglestreet_routes_1.set('fieldLabels', {'fid': 'no label', 'Name': 'header label', 'Length': 'header label', 'Done': 'header label', });
 lyr_missedstreetsTracks_2.set('fieldLabels', {'Name': 'no label', 'description': 'no label', 'timestamp': 'no label', 'begin': 'no label', 'end': 'no label', 'altitudeMode': 'no label', 'tessellate': 'no label', 'extrude': 'no label', 'visibility': 'no label', 'drawOrder': 'no label', 'icon': 'no label', });
 lyr_missedstreetsTracks_2.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
