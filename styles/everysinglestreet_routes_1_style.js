@@ -13,7 +13,7 @@ function categories_everysinglestreet_routes_1(feature, value, size, resolution,
                     break;
 case 'false':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(208,208,208,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 1}),
+        stroke: new ol.style.Stroke({color: 'rgba(183,183,183,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 1}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
