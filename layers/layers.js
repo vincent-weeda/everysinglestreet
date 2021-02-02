@@ -96,7 +96,7 @@ lyr_routes_1.set('fieldImages', {'fid': 'Hidden', 'Area': 'TextEdit', 'Status': 
 lyr_missedstreets_2.set('fieldImages', {'Name': 'Hidden', 'description': 'Hidden', 'timestamp': 'Hidden', 'begin': 'Hidden', 'end': 'Hidden', 'altitudeMode': 'Hidden', 'tessellate': 'Hidden', 'extrude': 'Hidden', 'visibility': 'Hidden', 'drawOrder': 'Hidden', 'icon': 'Hidden', });
 lyr_helsinkiborder_3.set('fieldImages', {'fid': 'Hidden', });
 lyr_gps_tracks_20210201_4.set('fieldImages', {'fid': 'Hidden', 'Area': 'TextEdit', 'Distance': 'TextEdit', 'Date': 'DateTime', 'Time': 'TextEdit', 'Pace': 'TextEdit', 'Elevation_number': 'Hidden', 'Elevation': 'TextEdit', 'Link': 'TextEdit', });
-lyr_photos_5.set('fieldImages', {'fid': 'Hidden', 'photo': 'ExternalResource', 'filename': 'ExternalResource', 'directory': 'ExternalResource', 'altitude': 'Hidden', 'direction': 'Hidden', 'longitude': 'Hidden', 'latitude': 'Hidden', 'timestamp': 'Hidden', 'web_directory': 'TextEdit', 'imgsrc': '', });
+lyr_photos_5.set('fieldImages', {'fid': 'Hidden', 'photo': 'ExternalResource', 'filename': 'ExternalResource', 'directory': 'ExternalResource', 'altitude': 'Hidden', 'direction': 'Hidden', 'longitude': 'Hidden', 'latitude': 'Hidden', 'timestamp': 'Hidden', 'web_directory': 'TextEdit', 'imgsrc': 'ExternalResource', });
 lyr_routes_1.set('fieldLabels', {'Area': 'header label', 'Status': 'header label', 'Distance': 'header label', });
 lyr_missedstreets_2.set('fieldLabels', {});
 lyr_helsinkiborder_3.set('fieldLabels', {});
