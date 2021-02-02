@@ -75,17 +75,17 @@ var lyr_photos_4 = new ol.layer.Vector({
 
 lyr_CartoPositron_0.setVisible(true);lyr_everysinglestreet_routes_1.setVisible(true);lyr_missedstreetsTracks_2.setVisible(true);lyr_helsinkiborder_3.setVisible(true);lyr_photos_4.setVisible(true);
 var layersList = [lyr_CartoPositron_0,lyr_everysinglestreet_routes_1,lyr_missedstreetsTracks_2,lyr_helsinkiborder_3,lyr_photos_4];
-lyr_everysinglestreet_routes_1.set('fieldAliases', {'fid': 'fid', 'Name': 'Name', 'Length': 'Length', 'Done': 'Done', });
+lyr_everysinglestreet_routes_1.set('fieldAliases', {'fid': 'fid', 'Name': 'Name', 'Length_number': 'Length_number', 'Done': 'Done', 'Length': 'Length', });
 lyr_missedstreetsTracks_2.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', });
 lyr_helsinkiborder_3.set('fieldAliases', {'fid': 'fid', });
 lyr_photos_4.set('fieldAliases', {'fid': 'fid', 'photo': 'photo', 'filename': 'filename', 'directory': 'directory', 'altitude': 'altitude', 'direction': 'direction', 'longitude': 'longitude', 'latitude': 'latitude', 'timestamp': 'timestamp', });
-lyr_everysinglestreet_routes_1.set('fieldImages', {'fid': 'Hidden', 'Name': 'TextEdit', 'Length': 'TextEdit', 'Done': 'CheckBox', });
-lyr_missedstreetsTracks_2.set('fieldImages', {'Name': '', 'description': '', 'timestamp': '', 'begin': '', 'end': '', 'altitudeMode': '', 'tessellate': '', 'extrude': '', 'visibility': '', 'drawOrder': '', 'icon': '', });
-lyr_helsinkiborder_3.set('fieldImages', {'fid': '', });
+lyr_everysinglestreet_routes_1.set('fieldImages', {'fid': 'Hidden', 'Name': 'TextEdit', 'Length_number': 'Hidden', 'Done': 'Hidden', 'Length': 'TextEdit', });
+lyr_missedstreetsTracks_2.set('fieldImages', {'Name': 'TextEdit', 'description': 'Hidden', 'timestamp': 'Hidden', 'begin': 'Hidden', 'end': 'Hidden', 'altitudeMode': 'Hidden', 'tessellate': 'Hidden', 'extrude': 'Hidden', 'visibility': 'Hidden', 'drawOrder': 'Hidden', 'icon': 'Hidden', });
+lyr_helsinkiborder_3.set('fieldImages', {'fid': 'Hidden', });
 lyr_photos_4.set('fieldImages', {'fid': 'Hidden', 'photo': 'ExternalResource', 'filename': 'Hidden', 'directory': 'Hidden', 'altitude': 'Hidden', 'direction': 'Hidden', 'longitude': 'Hidden', 'latitude': 'Hidden', 'timestamp': 'Hidden', });
-lyr_everysinglestreet_routes_1.set('fieldLabels', {'Name': 'no label', 'Length': 'header label', 'Done': 'header label', });
-lyr_missedstreetsTracks_2.set('fieldLabels', {'Name': 'no label', 'description': 'no label', 'timestamp': 'no label', 'begin': 'no label', 'end': 'no label', 'altitudeMode': 'no label', 'tessellate': 'no label', 'extrude': 'no label', 'visibility': 'no label', 'drawOrder': 'no label', 'icon': 'no label', });
-lyr_helsinkiborder_3.set('fieldLabels', {'fid': 'no label', });
+lyr_everysinglestreet_routes_1.set('fieldLabels', {'Name': 'no label', 'Length': 'no label', });
+lyr_missedstreetsTracks_2.set('fieldLabels', {'Name': 'no label', });
+lyr_helsinkiborder_3.set('fieldLabels', {});
 lyr_photos_4.set('fieldLabels', {'photo': 'no label', });
 lyr_photos_4.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';

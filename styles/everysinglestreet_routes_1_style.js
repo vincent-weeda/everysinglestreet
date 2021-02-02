@@ -25,7 +25,7 @@ var style_everysinglestreet_routes_1 = function(feature, resolution){
         feature: feature,
         variables: {}
     };
-    var value = feature.get("Done");
+    var value = feature.get("q2wHide_Done");
     var labelText = "";
     size = 0;
     var labelFont = "10px, sans-serif";
