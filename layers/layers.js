@@ -101,7 +101,7 @@ lyr_routes_1.set('fieldLabels', {'Area': 'header label', 'Status': 'header label
 lyr_missedstreets_2.set('fieldLabels', {});
 lyr_helsinkiborder_3.set('fieldLabels', {});
 lyr_gps_tracks_20210201_4.set('fieldLabels', {'Area': 'header label', 'Distance': 'header label', 'Date': 'header label', 'Time': 'header label', 'Pace': 'header label', 'Elevation': 'header label', 'Link': 'header label', });
-lyr_photos_5.set('fieldLabels', {'photo': 'header label', 'imgsrc': 'header label', });
+lyr_photos_5.set('fieldLabels', {'imgsrc': 'no label', });
 lyr_photos_5.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
