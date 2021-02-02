@@ -39,7 +39,7 @@ var lyr_missedstreets_2 = new ol.layer.Vector({
                 declutter: true,
                 source:jsonSource_missedstreets_2, 
                 style: style_missedstreets_2,
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/missedstreets_2.png" /> missed streets'
             });
 var format_helsinkiborder_3 = new ol.format.GeoJSON();
@@ -53,7 +53,7 @@ var lyr_helsinkiborder_3 = new ol.layer.Vector({
                 declutter: true,
                 source:jsonSource_helsinkiborder_3, 
                 style: style_helsinkiborder_3,
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/helsinkiborder_3.png" /> helsinki border'
             });
 var format_gps_tracks_20210201_4 = new ol.format.GeoJSON();
@@ -97,10 +97,10 @@ lyr_missedstreets_2.set('fieldImages', {'Name': 'Hidden', 'description': 'Hidden
 lyr_helsinkiborder_3.set('fieldImages', {'fid': 'Hidden', });
 lyr_gps_tracks_20210201_4.set('fieldImages', {'fid': 'Hidden', 'Area': 'TextEdit', 'Distance': 'TextEdit', 'Date': 'DateTime', 'Time': 'TextEdit', 'Pace': 'TextEdit', 'Elevation_number': 'Hidden', 'Elevation': 'TextEdit', 'Link': 'TextEdit', });
 lyr_photos_5.set('fieldImages', {'fid': 'Hidden', 'photo': 'Hidden', 'filename': 'Hidden', 'directory': 'Hidden', 'altitude': 'Hidden', 'direction': 'Hidden', 'longitude': 'Hidden', 'latitude': 'Hidden', 'timestamp': 'Hidden', 'imgsrc': 'TextEdit', });
-lyr_routes_1.set('fieldLabels', {'Area': 'header label', 'Status': 'header label', 'Distance': 'header label', });
+lyr_routes_1.set('fieldLabels', {'Area': 'inline label', 'Status': 'inline label', 'Distance': 'inline label', });
 lyr_missedstreets_2.set('fieldLabels', {});
 lyr_helsinkiborder_3.set('fieldLabels', {});
-lyr_gps_tracks_20210201_4.set('fieldLabels', {'Area': 'header label', 'Distance': 'header label', 'Date': 'header label', 'Time': 'header label', 'Pace': 'header label', 'Elevation': 'header label', 'Link': 'header label', });
+lyr_gps_tracks_20210201_4.set('fieldLabels', {'Area': 'inline label', 'Distance': 'inline label', 'Date': 'inline label', 'Time': 'inline label', 'Pace': 'inline label', 'Elevation': 'inline label', 'Link': 'no label', });
 lyr_photos_5.set('fieldLabels', {'imgsrc': 'no label', });
 lyr_photos_5.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
