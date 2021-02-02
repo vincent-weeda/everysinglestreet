@@ -96,12 +96,12 @@ lyr_routes_1.set('fieldImages', {'fid': 'Hidden', 'Area': 'TextEdit', 'Status': 
 lyr_missedstreets_2.set('fieldImages', {'Name': 'Hidden', 'description': 'Hidden', 'timestamp': 'Hidden', 'begin': 'Hidden', 'end': 'Hidden', 'altitudeMode': 'Hidden', 'tessellate': 'Hidden', 'extrude': 'Hidden', 'visibility': 'Hidden', 'drawOrder': 'Hidden', 'icon': 'Hidden', });
 lyr_helsinkiborder_3.set('fieldImages', {'fid': 'Hidden', });
 lyr_gps_tracks_20210201_4.set('fieldImages', {'fid': 'Hidden', 'Area': 'TextEdit', 'Distance': 'TextEdit', 'Date': 'DateTime', 'Time': 'TextEdit', 'Pace': 'TextEdit', 'Elevation_number': 'Hidden', 'Elevation': 'TextEdit', 'Link': 'TextEdit', });
-lyr_photos_5.set('fieldImages', {'fid': 'Hidden', 'photo': 'ExternalResource', 'filename': 'Hidden', 'directory': 'Hidden', 'altitude': 'Hidden', 'direction': 'Hidden', 'longitude': 'Hidden', 'latitude': 'Hidden', 'timestamp': 'Hidden', 'web_directory': 'TextEdit', 'image_link': '', });
+lyr_photos_5.set('fieldImages', {'fid': 'Hidden', 'photo': 'ExternalResource', 'filename': 'ExternalResource', 'directory': 'ExternalResource', 'altitude': 'Hidden', 'direction': 'Hidden', 'longitude': 'Hidden', 'latitude': 'Hidden', 'timestamp': 'Hidden', 'web_directory': 'TextEdit', 'image_link': 'TextEdit', });
 lyr_routes_1.set('fieldLabels', {'Area': 'header label', 'Status': 'header label', 'Distance': 'header label', });
 lyr_missedstreets_2.set('fieldLabels', {});
 lyr_helsinkiborder_3.set('fieldLabels', {});
 lyr_gps_tracks_20210201_4.set('fieldLabels', {'Area': 'header label', 'Distance': 'header label', 'Date': 'header label', 'Time': 'header label', 'Pace': 'header label', 'Elevation': 'header label', 'Link': 'header label', });
-lyr_photos_5.set('fieldLabels', {'photo': 'no label', 'web_directory': 'no label', 'image_link': 'no label', });
+lyr_photos_5.set('fieldLabels', {'photo': 'header label', 'filename': 'header label', 'directory': 'header label', 'web_directory': 'header label', 'image_link': 'header label', });
 lyr_photos_5.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
