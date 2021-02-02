@@ -1,5 +1,5 @@
 ol.proj.proj4.register(proj4);
-ol.proj.get("EPSG:3067").setExtent([379208.449541, 6666915.743403, 404321.817622, 6686957.930924]);
+ol.proj.get("EPSG:3067").setExtent([377775.520251, 6668775.802320, 407295.175891, 6692334.509060]);
 var wms_layers = [];
 
 
@@ -91,17 +91,17 @@ lyr_routes_1.set('fieldAliases', {'fid': 'fid', 'Area': 'Area', 'Status': 'Statu
 lyr_missedstreets_2.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', });
 lyr_helsinkiborder_3.set('fieldAliases', {'fid': 'fid', });
 lyr_gps_tracks_20210201_4.set('fieldAliases', {'fid': 'fid', 'Area': 'Area', 'Distance': 'Distance', 'Date': 'Date', 'Time': 'Time', 'Pace': 'Pace', 'Elevation_number': 'Elevation_number', 'Elevation': 'Elevation', 'Link': 'Link', });
-lyr_photos_5.set('fieldAliases', {'fid': 'fid', 'photo': 'photo', 'filename': 'filename', 'directory': 'directory', 'altitude': 'altitude', 'direction': 'direction', 'longitude': 'longitude', 'latitude': 'latitude', 'timestamp': 'timestamp', 'imgsrc': 'imgsrc', });
+lyr_photos_5.set('fieldAliases', {'fid': 'fid', 'altitude': 'altitude', 'direction': 'direction', 'longitude': 'longitude', 'latitude': 'latitude', 'timestamp': 'timestamp', 'imgsrc': 'imgsrc', });
 lyr_routes_1.set('fieldImages', {'fid': 'Hidden', 'Area': 'TextEdit', 'Status': 'TextEdit', 'Distance': 'TextEdit', });
 lyr_missedstreets_2.set('fieldImages', {'Name': 'Hidden', 'description': 'Hidden', 'timestamp': 'Hidden', 'begin': 'Hidden', 'end': 'Hidden', 'altitudeMode': 'Hidden', 'tessellate': 'Hidden', 'extrude': 'Hidden', 'visibility': 'Hidden', 'drawOrder': 'Hidden', 'icon': 'Hidden', });
 lyr_helsinkiborder_3.set('fieldImages', {'fid': 'Hidden', });
 lyr_gps_tracks_20210201_4.set('fieldImages', {'fid': 'Hidden', 'Area': 'TextEdit', 'Distance': 'TextEdit', 'Date': 'DateTime', 'Time': 'TextEdit', 'Pace': 'TextEdit', 'Elevation_number': 'Hidden', 'Elevation': 'TextEdit', 'Link': 'TextEdit', });
-lyr_photos_5.set('fieldImages', {'fid': 'Hidden', 'photo': 'Hidden', 'filename': 'Hidden', 'directory': 'Hidden', 'altitude': 'Hidden', 'direction': 'Hidden', 'longitude': 'Hidden', 'latitude': 'Hidden', 'timestamp': 'Hidden', 'imgsrc': 'TextEdit', });
+lyr_photos_5.set('fieldImages', {'fid': 'Hidden', 'altitude': 'Hidden', 'direction': 'Hidden', 'longitude': 'Hidden', 'latitude': 'Hidden', 'timestamp': 'DateTime', 'imgsrc': 'TextEdit', });
 lyr_routes_1.set('fieldLabels', {'Area': 'inline label', 'Status': 'inline label', 'Distance': 'inline label', });
 lyr_missedstreets_2.set('fieldLabels', {});
 lyr_helsinkiborder_3.set('fieldLabels', {});
 lyr_gps_tracks_20210201_4.set('fieldLabels', {'Area': 'inline label', 'Distance': 'inline label', 'Date': 'inline label', 'Time': 'inline label', 'Pace': 'inline label', 'Elevation': 'inline label', 'Link': 'no label', });
-lyr_photos_5.set('fieldLabels', {'imgsrc': 'no label', });
+lyr_photos_5.set('fieldLabels', {'timestamp': 'no label', 'imgsrc': 'no label', });
 lyr_photos_5.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });

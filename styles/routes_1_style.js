@@ -29,7 +29,7 @@ var style_routes_1 = function(feature, resolution){
             // Start of if blocks and style check logic
             if (exp_routes_1rule0_eval_expression(context)) {
                       return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(227,227,227,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 0}),
+        stroke: new ol.style.Stroke({color: 'rgba(206,206,206,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 0}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
