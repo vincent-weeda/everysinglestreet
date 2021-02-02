@@ -1,5 +1,5 @@
 ol.proj.proj4.register(proj4);
-ol.proj.get("EPSG:3067").setExtent([378982.483382, 6667207.618836, 404117.900075, 6687249.806357]);
+ol.proj.get("EPSG:3067").setExtent([378877.720374, 6668503.243405, 403991.088455, 6688545.430925]);
 var wms_layers = [];
 
 
@@ -70,21 +70,38 @@ var lyr_gps_tracks_20210201_4 = new ol.layer.Vector({
                 interactive: true,
                 title: '<img src="styles/legend/gps_tracks_20210201_4.png" /> gps_tracks_20210201'
             });
+var format_photos_5 = new ol.format.GeoJSON();
+var features_photos_5 = format_photos_5.readFeatures(json_photos_5, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3067'});
+var jsonSource_photos_5 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_photos_5.addFeatures(features_photos_5);
+var lyr_photos_5 = new ol.layer.Vector({
+                declutter: true,
+                source:jsonSource_photos_5, 
+                style: style_photos_5,
+                interactive: true,
+                title: '<img src="styles/legend/photos_5.png" /> photos'
+            });
 
-lyr_basemap_0.setVisible(true);lyr_routes_1.setVisible(true);lyr_missedstreets_2.setVisible(true);lyr_helsinkiborder_3.setVisible(true);lyr_gps_tracks_20210201_4.setVisible(true);
-var layersList = [lyr_basemap_0,lyr_routes_1,lyr_missedstreets_2,lyr_helsinkiborder_3,lyr_gps_tracks_20210201_4];
+lyr_basemap_0.setVisible(true);lyr_routes_1.setVisible(true);lyr_missedstreets_2.setVisible(true);lyr_helsinkiborder_3.setVisible(true);lyr_gps_tracks_20210201_4.setVisible(true);lyr_photos_5.setVisible(true);
+var layersList = [lyr_basemap_0,lyr_routes_1,lyr_missedstreets_2,lyr_helsinkiborder_3,lyr_gps_tracks_20210201_4,lyr_photos_5];
 lyr_routes_1.set('fieldAliases', {'fid': 'fid', 'Area': 'Area', 'Status': 'Status', 'Distance': 'Distance', });
 lyr_missedstreets_2.set('fieldAliases', {'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeMode', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', });
 lyr_helsinkiborder_3.set('fieldAliases', {'fid': 'fid', });
 lyr_gps_tracks_20210201_4.set('fieldAliases', {'fid': 'fid', 'Area': 'Area', 'Distance': 'Distance', 'Date': 'Date', 'Time': 'Time', 'Pace': 'Pace', 'Elevation_number': 'Elevation_number', 'Elevation': 'Elevation', 'Link': 'Link', });
+lyr_photos_5.set('fieldAliases', {'fid': 'fid', 'photo': 'photo', 'filename': 'filename', 'directory': 'directory', 'altitude': 'altitude', 'direction': 'direction', 'longitude': 'longitude', 'latitude': 'latitude', 'timestamp': 'timestamp', 'web_directory': 'web_directory', 'image_link': 'image_link', });
 lyr_routes_1.set('fieldImages', {'fid': 'Hidden', 'Area': 'TextEdit', 'Status': 'TextEdit', 'Distance': 'TextEdit', });
-lyr_missedstreets_2.set('fieldImages', {'Name': 'TextEdit', 'description': 'Hidden', 'timestamp': 'Hidden', 'begin': 'Hidden', 'end': 'Hidden', 'altitudeMode': 'Hidden', 'tessellate': 'Hidden', 'extrude': 'Hidden', 'visibility': 'Hidden', 'drawOrder': 'Hidden', 'icon': 'Hidden', });
+lyr_missedstreets_2.set('fieldImages', {'Name': 'Hidden', 'description': 'Hidden', 'timestamp': 'Hidden', 'begin': 'Hidden', 'end': 'Hidden', 'altitudeMode': 'Hidden', 'tessellate': 'Hidden', 'extrude': 'Hidden', 'visibility': 'Hidden', 'drawOrder': 'Hidden', 'icon': 'Hidden', });
 lyr_helsinkiborder_3.set('fieldImages', {'fid': 'Hidden', });
 lyr_gps_tracks_20210201_4.set('fieldImages', {'fid': 'Hidden', 'Area': 'TextEdit', 'Distance': 'TextEdit', 'Date': 'DateTime', 'Time': 'TextEdit', 'Pace': 'TextEdit', 'Elevation_number': 'Hidden', 'Elevation': 'TextEdit', 'Link': 'TextEdit', });
+lyr_photos_5.set('fieldImages', {'fid': 'Hidden', 'photo': 'ExternalResource', 'filename': 'Hidden', 'directory': 'Hidden', 'altitude': 'Hidden', 'direction': 'Hidden', 'longitude': 'Hidden', 'latitude': 'Hidden', 'timestamp': 'Hidden', 'web_directory': 'TextEdit', 'image_link': '', });
 lyr_routes_1.set('fieldLabels', {'Area': 'header label', 'Status': 'header label', 'Distance': 'header label', });
-lyr_missedstreets_2.set('fieldLabels', {'Name': 'no label', });
+lyr_missedstreets_2.set('fieldLabels', {});
 lyr_helsinkiborder_3.set('fieldLabels', {});
 lyr_gps_tracks_20210201_4.set('fieldLabels', {'Area': 'header label', 'Distance': 'header label', 'Date': 'header label', 'Time': 'header label', 'Pace': 'header label', 'Elevation': 'header label', 'Link': 'header label', });
-lyr_gps_tracks_20210201_4.on('precompose', function(evt) {
+lyr_photos_5.set('fieldLabels', {'photo': 'no label', 'web_directory': 'no label', 'image_link': 'no label', });
+lyr_photos_5.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
