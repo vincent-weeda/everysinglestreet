@@ -763,3 +763,43 @@ function fnc__specialcol_(values, context) {
 function fnc_project_color(values, context) {
     return false;
 };
+
+
+
+function exp_routes_1rule0_eval_expression(context) {
+    // Status = 'true'
+
+    var feature = context.feature;
+    
+    if (feature.properties) {
+        return (feature.get('Status')  == 'true');
+    } else {
+        return (feature.get('Status')  == 'true');
+    }
+}
+
+
+function exp_routes_1rule1_eval_expression(context) {
+    // Status = 'false'
+
+    var feature = context.feature;
+    
+    if (feature.properties) {
+        return (feature.get('Status')  == 'false');
+    } else {
+        return (feature.get('Status')  == 'false');
+    }
+}
+
+
+function exp_routes_1rule2_eval_expression(context) {
+    // Status = 'next'
+
+    var feature = context.feature;
+    
+    if (feature.properties) {
+        return (feature.get('Status')  == 'next');
+    } else {
+        return (feature.get('Status')  == 'next');
+    }
+}
