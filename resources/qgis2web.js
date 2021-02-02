@@ -110,7 +110,7 @@ var map = new ol.Map({
 var layerSwitcher = new ol.control.LayerSwitcher({tipLabel: "Layers"});
 map.addControl(layerSwitcher);
 
-map.getView().fit([378917.175536, 6668818.857044, 404162.835284, 6688861.044565], map.getSize());
+map.getView().fit([378188.549735, 6666998.963098, 404845.320596, 6687041.150618], map.getSize());
 
 var NO_POPUP = 0
 var ALL_FIELDS = 1
@@ -150,7 +150,7 @@ var featureOverlay = new ol.layer.Vector({
     updateWhileInteracting: true // optional, for instant visual feedback
 });
 
-var doHighlight = true;
+var doHighlight = false;
 var doHover = false;
 
 var highlight;

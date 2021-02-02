@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_helsinkiborder_17 = function(feature, resolution){
+var style_helsinkiborder_3 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}

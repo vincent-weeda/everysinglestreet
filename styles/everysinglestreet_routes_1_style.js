@@ -1,6 +1,6 @@
 var size = 0;
 var placement = 'point';
-function categories_everysinglestreet_routes_15(feature, value, size, resolution, labelText,
+function categories_everysinglestreet_routes_1(feature, value, size, resolution, labelText,
                        labelFont, labelFill, bufferColor, bufferWidth,
                        placement) {
                 switch(value.toString()) {case 'true':
@@ -20,7 +20,7 @@ case 'false':
     })];
                     break;}};
 
-var style_everysinglestreet_routes_15 = function(feature, resolution){
+var style_everysinglestreet_routes_1 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -40,7 +40,7 @@ var style_everysinglestreet_routes_15 = function(feature, resolution){
         labelText = String("");
     }
     
-var style = categories_everysinglestreet_routes_15(feature, value, size, resolution, labelText,
+var style = categories_everysinglestreet_routes_1(feature, value, size, resolution, labelText,
                           labelFont, labelFill, bufferColor,
                           bufferWidth, placement);
 
