@@ -1,5 +1,5 @@
 ol.proj.proj4.register(proj4);
-ol.proj.get("EPSG:3067").setExtent([377985.941187, 6668592.471444, 408148.441218, 6692643.096468]);
+ol.proj.get("EPSG:3067").setExtent([387646.240045, 6675400.433293, 406396.792652, 6686140.881409]);
 var wms_layers = [];
 
 
@@ -39,7 +39,7 @@ var lyr_missedstreets_2 = new ol.layer.Vector({
                 declutter: true,
                 source:jsonSource_missedstreets_2, 
                 style: style_missedstreets_2,
-                interactive: false,
+                interactive: true,
                 title: '<img src="styles/legend/missedstreets_2.png" /> missed streets'
             });
 var format_helsinkiborder_3 = new ol.format.GeoJSON();
@@ -53,7 +53,7 @@ var lyr_helsinkiborder_3 = new ol.layer.Vector({
                 declutter: true,
                 source:jsonSource_helsinkiborder_3, 
                 style: style_helsinkiborder_3,
-                interactive: false,
+                interactive: true,
                 title: '<img src="styles/legend/helsinkiborder_3.png" /> helsinki border'
             });
 var format_gps_tracks_20210201_4 = new ol.format.GeoJSON();
