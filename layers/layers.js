@@ -39,7 +39,7 @@ var lyr_missedstreets_2 = new ol.layer.Vector({
                 declutter: true,
                 source:jsonSource_missedstreets_2, 
                 style: style_missedstreets_2,
-                interactive: false,
+                interactive: true,
                 title: '<img src="styles/legend/missedstreets_2.png" /> missed streets'
             });
 var format_helsinkiborder_3 = new ol.format.GeoJSON();
@@ -53,7 +53,7 @@ var lyr_helsinkiborder_3 = new ol.layer.Vector({
                 declutter: true,
                 source:jsonSource_helsinkiborder_3, 
                 style: style_helsinkiborder_3,
-                interactive: false,
+                interactive: true,
                 title: '<img src="styles/legend/helsinkiborder_3.png" /> helsinki border'
             });
 var format_gps_tracks_20210201_4 = new ol.format.GeoJSON();
