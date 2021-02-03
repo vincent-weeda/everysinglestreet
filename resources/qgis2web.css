@@ -78,8 +78,8 @@ th, td {
 }
 
 #popup-content img {
-    max-height:500px;
-    max-width:500px;	
+    max-height:400px;
+    max-width:300px;	
     height:auto;
     width:auto;
 }
