@@ -76,3 +76,11 @@ th, td {
 #popup-content li {
     margin-bottom:0.25em;
 }
+
+#popup-content img {
+    max-height:400px;
+    max-width:250px;	
+    height:auto;
+    width:auto;
+    border-radius: 15px;
+}
