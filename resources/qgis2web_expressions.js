@@ -803,3 +803,16 @@ function exp_routes_1rule2_eval_expression(context) {
         return (feature.get('Status')  == 'next');
     }
 }
+
+
+function exp_routes_1rule4_eval_expression(context) {
+    // Status = 'optional'
+
+    var feature = context.feature;
+    
+    if (feature.properties) {
+        return (feature.get('Status')  == 'optional');
+    } else {
+        return (feature.get('Status')  == 'optional');
+    }
+}
