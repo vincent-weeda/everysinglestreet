@@ -1,5 +1,5 @@
 ol.proj.proj4.register(proj4);
-ol.proj.get("EPSG:3067").setExtent([378500.996870, 6668888.243691, 405410.084116, 6687238.101385]);
+ol.proj.get("EPSG:3067").setExtent([373791.512537, 6666034.870379, 411717.118171, 6691897.117582]);
 var wms_layers = [];
 
 
@@ -95,12 +95,12 @@ lyr_photos_5.set('fieldAliases', {'fid': 'fid', 'altitude': 'altitude', 'directi
 lyr_routes_1.set('fieldImages', {'fid': 'Hidden', 'Area': 'TextEdit', 'Status': 'TextEdit', 'Distance': 'TextEdit', });
 lyr_missedstreets_2.set('fieldImages', {'fid': '', });
 lyr_helsinkiborder_3.set('fieldImages', {'fid': 'Hidden', });
-lyr_gps_tracks_4.set('fieldImages', {'fid': 'Hidden', 'Area': 'TextEdit', 'Distance': 'TextEdit', 'Date': 'DateTime', 'Time': 'TextEdit', 'Pace': 'TextEdit', 'Elevation_number': 'Range', 'Elevation': 'TextEdit', 'Link': 'TextEdit', });
+lyr_gps_tracks_4.set('fieldImages', {'fid': 'Hidden', 'Area': 'TextEdit', 'Distance': 'TextEdit', 'Date': 'DateTime', 'Time': 'TextEdit', 'Pace': 'TextEdit', 'Elevation_number': 'Hidden', 'Elevation': 'TextEdit', 'Link': 'TextEdit', });
 lyr_photos_5.set('fieldImages', {'fid': 'Hidden', 'altitude': 'Hidden', 'direction': 'Hidden', 'longitude': 'Hidden', 'latitude': 'Hidden', 'timestamp': 'Hidden', 'Date': 'DateTime', 'photo_html': 'TextEdit', });
 lyr_routes_1.set('fieldLabels', {'Area': 'inline label', 'Status': 'inline label', 'Distance': 'inline label', });
 lyr_missedstreets_2.set('fieldLabels', {'fid': 'no label', });
 lyr_helsinkiborder_3.set('fieldLabels', {});
-lyr_gps_tracks_4.set('fieldLabels', {'Area': 'no label', 'Distance': 'no label', 'Date': 'no label', 'Time': 'no label', 'Pace': 'no label', 'Elevation_number': 'no label', 'Elevation': 'no label', 'Link': 'no label', });
+lyr_gps_tracks_4.set('fieldLabels', {'Area': 'inline label', 'Distance': 'inline label', 'Date': 'inline label', 'Time': 'inline label', 'Pace': 'inline label', 'Elevation': 'inline label', 'Link': 'inline label', });
 lyr_photos_5.set('fieldLabels', {'Date': 'no label', 'photo_html': 'no label', });
 lyr_photos_5.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
