@@ -1,5 +1,5 @@
 ol.proj.proj4.register(proj4);
-ol.proj.get("EPSG:3067").setExtent([378515.722130, 6669031.538796, 404304.676538, 6686067.991962]);
+ol.proj.get("EPSG:3067").setExtent([378951.745493, 6668843.168725, 404656.697868, 6685824.129269]);
 var wms_layers = [];
 
 
@@ -96,12 +96,12 @@ lyr_routes_1.set('fieldImages', {'fid': 'Hidden', 'Area': 'TextEdit', 'Status': 
 lyr_missedstreets_2.set('fieldImages', {'fid': 'Hidden', });
 lyr_helsinkiborder_3.set('fieldImages', {'fid': 'Hidden', });
 lyr_photos_4.set('fieldImages', {'fid': 'Hidden', 'altitude': 'Hidden', 'direction': 'Hidden', 'longitude': 'Hidden', 'latitude': 'Hidden', 'timestamp': 'Hidden', 'Date': 'DateTime', 'photo_html': 'TextEdit', });
-lyr_gpstracks_5.set('fieldImages', {'fid': 'Hidden', 'Area': 'TextEdit', 'Distance': 'TextEdit', 'Date': 'DateTime', 'Time': 'TextEdit', 'Pace': 'TextEdit', 'Elevation_number': 'Range', 'Elevation': 'TextEdit', 'Link': 'TextEdit', 'layer': 'Hidden', 'path': 'Hidden', });
+lyr_gpstracks_5.set('fieldImages', {'fid': 'Hidden', 'Area': 'TextEdit', 'Distance': 'TextEdit', 'Date': 'DateTime', 'Time': 'TextEdit', 'Pace': 'TextEdit', 'Elevation_number': 'Hidden', 'Elevation': 'TextEdit', 'Link': 'TextEdit', 'layer': 'Hidden', 'path': 'Hidden', });
 lyr_routes_1.set('fieldLabels', {'Area': 'inline label', 'Status': 'inline label', 'Distance': 'inline label', });
 lyr_missedstreets_2.set('fieldLabels', {});
 lyr_helsinkiborder_3.set('fieldLabels', {});
 lyr_photos_4.set('fieldLabels', {'Date': 'no label', 'photo_html': 'no label', });
-lyr_gpstracks_5.set('fieldLabels', {'Area': 'inline label', 'Distance': 'inline label', 'Date': 'inline label', 'Time': 'inline label', 'Pace': 'inline label', 'Elevation_number': 'inline label', 'Elevation': 'inline label', 'Link': 'inline label', });
+lyr_gpstracks_5.set('fieldLabels', {'Area': 'inline label', 'Distance': 'inline label', 'Date': 'inline label', 'Time': 'inline label', 'Pace': 'inline label', 'Elevation': 'inline label', 'Link': 'inline label', });
 lyr_gpstracks_5.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
