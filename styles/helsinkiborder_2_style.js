@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_photos_4 = function(feature, resolution){
+var style_helsinkiborder_2 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -16,13 +16,12 @@ var style_photos_4 = function(feature, resolution){
     var textAlign = "left";
     var offsetX = 8;
     var offsetY = 3;
-    var placement = 'point';
+    var placement = 'line';
     if ("" !== null) {
         labelText = String("");
     }
     var style = [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 4.0 + size,
-            stroke: new ol.style.Stroke({color: 'rgba(255,255,255,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1}), fill: new ol.style.Fill({color: 'rgba(0,0,0,1.0)'})}),
+        stroke: new ol.style.Stroke({color: 'rgba(227,125,178,1.0)', lineDash: null, lineCap: 'round', lineJoin: 'round', width: 2}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
