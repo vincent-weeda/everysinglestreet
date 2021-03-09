@@ -1,5 +1,5 @@
 ol.proj.proj4.register(proj4);
-ol.proj.get("EPSG:3067").setExtent([379224.521646, 6669311.353254, 404929.474021, 6686292.313799]);
+ol.proj.get("EPSG:3067").setExtent([378424.184943, 6669218.532678, 404550.176458, 6685946.002536]);
 var wms_layers = [];
 
 
@@ -67,7 +67,7 @@ var lyr_missedstreets_4 = new ol.layer.Vector({
                 declutter: true,
                 source:jsonSource_missedstreets_4, 
                 style: style_missedstreets_4,
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/missedstreets_4.png" /> missed streets'
             });
 var format_photos_5 = new ol.format.GeoJSON();
