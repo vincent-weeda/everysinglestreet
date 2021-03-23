@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_missedstreets_3 = function(feature, resolution){
+var style_missedstreets_4 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
