@@ -53,7 +53,7 @@ var style_routes_1 = function(feature, resolution){
                     }
                     else if (exp_routes_1rule4_eval_expression(context)) {
                       return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(255,127,0,1.0)', lineDash: [10,5], lineCap: 'square', lineJoin: 'bevel', width: 1}),
+        stroke: new ol.style.Stroke({color: 'rgba(255,127,0,1.0)', lineDash: [1,5], lineCap: 'square', lineJoin: 'bevel', width: 1}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
