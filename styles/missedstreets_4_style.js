@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_helsinkiborder_2 = function(feature, resolution){
+var style_missedstreets_4 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -21,7 +21,7 @@ var style_helsinkiborder_2 = function(feature, resolution){
         labelText = String("");
     }
     var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(227,125,178,1.0)', lineDash: null, lineCap: 'round', lineJoin: 'round', width: 2}),
+        stroke: new ol.style.Stroke({color: 'rgba(219,30,42,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 3}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
