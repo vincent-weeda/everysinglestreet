@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_missedstreets_6 = function(feature, resolution){
+var style_newroutesmarchapril_2 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -21,7 +21,7 @@ var style_missedstreets_6 = function(feature, resolution){
         labelText = String("");
     }
     var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(219,30,42,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 3}),
+        stroke: new ol.style.Stroke({color: 'rgba(159,159,159,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 1}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
