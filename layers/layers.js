@@ -39,7 +39,7 @@ var lyr_newroutesmarchapril_2 = new ol.layer.Vector({
                 declutter: true,
                 source:jsonSource_newroutesmarchapril_2, 
                 style: style_newroutesmarchapril_2,
-                interactive: false,
+                interactive: true,
                 title: '<img src="styles/legend/newroutesmarchapril_2.png" /> new routes march-april'
             });
 var format_gpstracks_3 = new ol.format.GeoJSON();
@@ -102,19 +102,19 @@ var lyr_photos_6 = new ol.layer.Vector({
 lyr_basemap_0.setVisible(true);lyr_routes_1.setVisible(true);lyr_newroutesmarchapril_2.setVisible(true);lyr_gpstracks_3.setVisible(true);lyr_helsinkiborder_4.setVisible(true);lyr_missedstreets_5.setVisible(true);lyr_photos_6.setVisible(true);
 var layersList = [lyr_basemap_0,lyr_routes_1,lyr_newroutesmarchapril_2,lyr_gpstracks_3,lyr_helsinkiborder_4,lyr_missedstreets_5,lyr_photos_6];
 lyr_routes_1.set('fieldAliases', {'fid': 'fid', 'Area': 'Area', 'Status': 'Status', 'Distance': 'Distance', });
-lyr_newroutesmarchapril_2.set('fieldAliases', {'fid': 'fid', });
+lyr_newroutesmarchapril_2.set('fieldAliases', {'fid': 'fid', 'Distance': 'Distance', });
 lyr_gpstracks_3.set('fieldAliases', {'fid': 'fid', 'Area': 'Area', 'Distance': 'Distance', 'Date': 'Date', 'Time': 'Time', 'Pace': 'Pace', 'Elevation': 'Elevation', 'Link': 'Link', });
 lyr_helsinkiborder_4.set('fieldAliases', {'fid': 'fid', });
 lyr_missedstreets_5.set('fieldAliases', {'fid': 'fid', });
 lyr_photos_6.set('fieldAliases', {'fid': 'fid', 'longitude': 'longitude', 'latitude': 'latitude', 'Date': 'Date', 'photo_html': 'photo_html', });
 lyr_routes_1.set('fieldImages', {'fid': 'Hidden', 'Area': 'TextEdit', 'Status': 'TextEdit', 'Distance': 'TextEdit', });
-lyr_newroutesmarchapril_2.set('fieldImages', {'fid': 'TextEdit', });
+lyr_newroutesmarchapril_2.set('fieldImages', {'fid': 'Hidden', 'Distance': '', });
 lyr_gpstracks_3.set('fieldImages', {'fid': 'Hidden', 'Area': 'TextEdit', 'Distance': 'TextEdit', 'Date': 'DateTime', 'Time': 'TextEdit', 'Pace': 'TextEdit', 'Elevation': 'TextEdit', 'Link': 'TextEdit', });
 lyr_helsinkiborder_4.set('fieldImages', {'fid': 'Hidden', });
 lyr_missedstreets_5.set('fieldImages', {'fid': 'Hidden', });
 lyr_photos_6.set('fieldImages', {'fid': 'Hidden', 'longitude': 'Hidden', 'latitude': 'Hidden', 'Date': 'DateTime', 'photo_html': 'TextEdit', });
 lyr_routes_1.set('fieldLabels', {'Area': 'inline label', 'Status': 'inline label', 'Distance': 'inline label', });
-lyr_newroutesmarchapril_2.set('fieldLabels', {'fid': 'no label', });
+lyr_newroutesmarchapril_2.set('fieldLabels', {'Distance': 'inline label', });
 lyr_gpstracks_3.set('fieldLabels', {'Area': 'inline label', 'Distance': 'inline label', 'Date': 'inline label', 'Time': 'inline label', 'Pace': 'inline label', 'Elevation': 'inline label', 'Link': 'inline label', });
 lyr_helsinkiborder_4.set('fieldLabels', {});
 lyr_missedstreets_5.set('fieldLabels', {});
