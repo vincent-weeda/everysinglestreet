@@ -51,7 +51,7 @@ var style_routes_1 = function(feature, resolution){
                               bufferWidth)
     })];
                     }
-                    else if (exp_routes_1rule4_eval_expression(context)) {
+                    else if (exp_routes_1rule3_eval_expression(context)) {
                       return [ new ol.style.Style({
         stroke: new ol.style.Stroke({color: 'rgba(255,127,0,1.0)', lineDash: [1,5], lineCap: 'square', lineJoin: 'bevel', width: 1}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
@@ -60,12 +60,7 @@ var style_routes_1 = function(feature, resolution){
     })];
                     }
             else {
-                return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(255,1,43,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 7}),
-        text: createTextStyle(feature, resolution, labelText, labelFont,
-                              labelFill, placement, bufferColor,
-                              bufferWidth)
-    })];
+                return [];
             }
         }
         var style = rules_routes_1(feature, value);
