@@ -1,5 +1,5 @@
 ol.proj.proj4.register(proj4);
-ol.proj.get("EPSG:3067").setExtent([378448.512980, 6667411.102292, 405856.018873, 6687043.429208]);
+ol.proj.get("EPSG:3067").setExtent([378290.141473, 6668137.986753, 405697.647367, 6688261.914747]);
 var wms_layers = [];
 
 
@@ -91,17 +91,17 @@ lyr_helsinkiborder_1.set('fieldAliases', {'fid': 'fid', });
 lyr_routes_2.set('fieldAliases', {'fid': 'fid', 'Distance': 'Distance', 'Area': 'Area', 'Status': 'Status', });
 lyr_gpstracks_3.set('fieldAliases', {'fid': 'fid', 'Area': 'Area', 'Distance': 'Distance', 'Date': 'Date', 'Time': 'Time', 'Pace': 'Pace', 'Elevation': 'Elevation', 'Link': 'Link', });
 lyr_missedstreets_4.set('fieldAliases', {'fid': 'fid', 'Street': 'Street', 'Area': 'Area', });
-lyr_photos_5.set('fieldAliases', {'fid': 'fid', 'Date': 'Date', 'photo_html': 'photo_html', });
+lyr_photos_5.set('fieldAliases', {'fid': 'fid', 'Date': 'Date', 'html': 'html', });
 lyr_helsinkiborder_1.set('fieldImages', {'fid': 'Hidden', });
 lyr_routes_2.set('fieldImages', {'fid': 'Hidden', 'Distance': 'TextEdit', 'Area': 'TextEdit', 'Status': 'TextEdit', });
 lyr_gpstracks_3.set('fieldImages', {'fid': 'Hidden', 'Area': 'TextEdit', 'Distance': 'TextEdit', 'Date': 'DateTime', 'Time': 'TextEdit', 'Pace': 'TextEdit', 'Elevation': 'TextEdit', 'Link': 'TextEdit', });
 lyr_missedstreets_4.set('fieldImages', {'fid': 'Hidden', 'Street': 'TextEdit', 'Area': 'TextEdit', });
-lyr_photos_5.set('fieldImages', {'fid': 'Hidden', 'Date': 'DateTime', 'photo_html': 'TextEdit', });
+lyr_photos_5.set('fieldImages', {'fid': 'Hidden', 'Date': 'DateTime', 'html': '', });
 lyr_helsinkiborder_1.set('fieldLabels', {});
 lyr_routes_2.set('fieldLabels', {'Distance': 'inline label', 'Area': 'inline label', 'Status': 'inline label', });
 lyr_gpstracks_3.set('fieldLabels', {'Area': 'inline label', 'Distance': 'inline label', 'Date': 'inline label', 'Time': 'inline label', 'Pace': 'inline label', 'Elevation': 'inline label', 'Link': 'inline label', });
 lyr_missedstreets_4.set('fieldLabels', {'Street': 'inline label', 'Area': 'inline label', });
-lyr_photos_5.set('fieldLabels', {'Date': 'no label', 'photo_html': 'no label', });
+lyr_photos_5.set('fieldLabels', {'Date': 'no label', 'html': 'no label', });
 lyr_photos_5.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
