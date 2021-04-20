@@ -77,6 +77,8 @@ input, select, textarea {
 	@-ms-viewport {
 		width: device-width;
 	}
+	
+	.tab { margin-left: 40px; }
 
 	body {
 		-ms-overflow-style: scrollbar;
