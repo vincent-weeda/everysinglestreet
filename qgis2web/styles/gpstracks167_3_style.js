@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_gpstrack157_3 = function(feature, resolution){
+var style_gpstracks167_3 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
