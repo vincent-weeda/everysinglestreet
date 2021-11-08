@@ -31,7 +31,7 @@ th, td {
     height: auto;
     width: auto;
     min-width: 100px;
-    max-height: 1000px;
+    max-height:400px;
     overflow: auto;      
 }
 
@@ -75,13 +75,4 @@ th, td {
 
 #popup-content li {
     margin-bottom:0.25em;
-}
-
-#popup-content img {
-    max-height:400px;
-    max-width:250px;	
-    height:auto;
-    width:auto;
-    border-radius: 15px;
-}
 }
